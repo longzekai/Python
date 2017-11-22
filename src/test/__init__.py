@@ -1,5 +1,5 @@
 # coding=utf-8
-#print ('hello')
+# print ('hello')
 # print ("hello # world")
 
 # print('''这是一段多行字符串。这是它的第一行。
@@ -7,15 +7,15 @@
 # "What's your name?," I asked.
 # He said "Bond, James Bond."
 # ''')
-from idlelib.multicall import r
+import keyword
 
 age = 20
 name = 'Swaroop'
-print ('{0} was {1} years old when he wrote this book'.format(name, age))
-print ('why is {0} playing with that python? '.format(name))
+print('{0} was {1} years old when he wrote this book'.format(name, age))
+print('why is {0} playing with that python? '.format(name))
 
 # 对于浮点数 '0.333' 保留小数点(.)后三位
-print('{0:.3f}'.format(1.0/3))
+print('{0:.3f}'.format(1.0 / 3))
 # 使用下划线填充文本，并保持文字处于中间位置
 # 使用 (^) 定义 '___hello___'字符串长度为 11
 print('{0:^11}'.format('Hello'))
@@ -40,4 +40,9 @@ This is the second sentence.")
 r  或  R  来指定一个 原始（Raw） 字符串 。下面是一个例子：
 """
 print(r"Newlines are indicated by \n")
+
+# python保留字
+# 保留字即关键字，我们不能把它们用作任何标识符名称。
+# Python 的标准库提供了一个 keyword 模块，可以输出当前版本的所有关键字：
+print(keyword.kwlist)
 
