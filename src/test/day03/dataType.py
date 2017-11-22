@@ -47,3 +47,24 @@ print('5:', str[2:])  # 输出从第三个开始的后的所有字符
 print('6:', str * 2)  # 输出字符串两次
 print('7:', str + "TEST")  # 连接字符串
 print('8:', str[-1])
+
+# List 列表
+# 列表截取的语法格式如下：
+# 变量[头下标:尾下标]
+# 索引值以 0 为开始值，-1 为从末尾的开始位置。
+# 加号（+）是列表连接运算符，星号（*）是重复操作。
+list = ['abcd', 786, 2.23, 'danny', 70.2]
+tinyList = [123, 'danny']
+
+print('1:', list)
+print('2:', list[0])
+print('3:', list[1:3])
+print('4:', list[2:])
+print('5:', tinyList * 2)
+print('6:', list + tinyList)
+
+# 列表中的元素是可以改变的
+a = [1, 2, 3, 4, 5, 6]
+a[0] = 9
+a[2:5] = [13, 14, 15]
+print(a)
